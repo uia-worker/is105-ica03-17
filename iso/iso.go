@@ -1,7 +1,6 @@
 package iso
 
 import (
-	"bytes"
 	"fmt"
 )
 
@@ -22,12 +21,11 @@ func IterateOverASCIIStringLiteral() {
 
 // Kode for Oppgave 2b
 func GreetingExtendedASCII() string {
-	var buffer bytes.Buffer
+	var extascii []byte
 	a := "\x22\x53\x61\x6C\x75\x74\x2C\x20\xE7\x61\x20\x76\x61\x20\xB0\x2D\x29\x20\x80\x35\x30\x22"
 	for i := 0; i < len(a); i++ {
+		fmt.Println(extascii)
 		fmt.Printf("%c", a[i])
-		fmt.Formatter("%c", a[i])
-		buffer.WriteString("%c", a[i])
 
 	}
 	return a
