@@ -5,13 +5,13 @@ import (
 )
 
 func TestGretingsExtendedASCII(t *testing.T) {
-	ASCII := GreetingExtendedASCII2()
-	if !(isASCII(ASCII)) {
+	ascii := GreetingExtendedASCII2()
+	if !(IsASCII(ascii)) {
 		t.Fail()
 	}
 }
 
-func isASCII(s string) bool {
+func IsASCII(s string) bool {
 	for _, C := range s {
 		if C > 127 && C < 256 {
 			return true
