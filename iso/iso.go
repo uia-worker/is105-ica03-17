@@ -1,8 +1,12 @@
 package iso
 
+<<<<<<< HEAD
 import (
 	"fmt"
 )
+=======
+import "fmt"
+>>>>>>> TorsTest
 
 const ASCII = "\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8A\x8B\x8C\x8D\x8E\x8F" +
 	"\x90\x91\x92\x93\x94\x95\x96\x97\x98\x99\x9A\x9B\x9C\x9D\x9E\x9F" +
@@ -21,7 +25,11 @@ func IterateOverASCIIStringLiteral() {
 
 // Kode for Oppgave 2b
 func GreetingExtendedASCII() string {
+<<<<<<< HEAD
 	var extascii []byte
+=======
+	//var buffer bytes.Buffer
+>>>>>>> TorsTest
 	a := "\x22\x53\x61\x6C\x75\x74\x2C\x20\xE7\x61\x20\x76\x61\x20\xB0\x2D\x29\x20\x80\x35\x30\x22"
 	for i := 0; i < len(a); i++ {
 		fmt.Println(extascii)
@@ -29,4 +37,18 @@ func GreetingExtendedASCII() string {
 
 	}
 	return a
+}
+
+func GreetingExtendedASCII2() string {
+	var extASCII []byte
+	for i := 0x80; i <= 0xFF; i++ {
+		extASCII = append(extASCII, byte(i))
+	}
+	//sfmt.Println(string(extASCII))
+	//fmt.Printf("%c", string(extASCII))
+	fmt.Printf("\n%c", extASCII)
+
+	greeting := "\x22\x53\x61\x6C\x75\x74\x2C\x20\xE7\x61\x20\x76\x61\x20\xB0\x2D\x29\x20\x80\x35\x30\x22"
+
+	return greeting
 }
