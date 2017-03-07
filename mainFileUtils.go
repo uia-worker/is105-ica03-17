@@ -18,6 +18,6 @@ func main() {
 	absPathNor, _ := filepath.Abs("/GitHub/org/is105-ica03/files/lang03.wl")
 	fmt.Printf("%s", fileutils.FileToByteslice(absPathNor))
 
-	hexPath, _ := filepath.Abs("/GitHub/org/is105-ica03/files/hexLang.wl")
-	fmt.Printf("% X", fileutils.FileToByteslice(hexPath))
+	hexPath, _ := filepath.Abs("/GitHub/org/is105-ica03/treasure/treasure.txt")
+	fmt.Printf("%s", fileutils.FileToByteslice(hexPath))
 }
