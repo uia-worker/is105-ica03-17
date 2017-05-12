@@ -22,16 +22,21 @@ c. iso_test.go
 ### Oppgave 3
 a. forklar..
 
+
 https://github.com/GB-Noname/is105-ica03/tree/master/fileutils
+
 b. fileutils.go
 
 https://github.com/GB-Noname/is105-ica03/tree/master/treasure
+
 c. treasure.go
 
 ### Oppgave 4
 
 https://github.com/GB-Noname/is105-ica03/tree/master/unicode
+
 a. unicode.go, ikke gjort
 
 https://github.com/GB-Noname/is105-ica03/blob/master/server.go
+
 b. server.go
