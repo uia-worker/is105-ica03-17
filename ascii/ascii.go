@@ -22,6 +22,5 @@ func GreetingASCII() string {
 		fmt.Printf("%c", a[i])
 	}
 	fmt.Println()
-	b := "\x22\x48\x65\x6C\x6C\x6F\x20\x3A\x2D\x29\x22"
-	return b
+	return a
 }
