@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fmt"
+
 
 	"./iso"
+	"fmt"
 )
 
 const ASCIIEX = "\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8A\x8B\x8C\x8D\x8E\x8F" +
@@ -17,6 +18,5 @@ const ASCIIEX = "\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8A\x8B\x8C\x8D\x8E\x8
 
 func main() {
 	iso.IterateOverExtendedASCIIStringLiteral(ASCIIEX)
-	fmt.Println(iso.GreetingExtendedASCII())
-	fmt.Printf("%c", iso.GreetingExtendedASCII())
+	fmt.Printf(iso.GreetingExtendedASCII())
 }
