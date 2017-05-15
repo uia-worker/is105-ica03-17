@@ -9,7 +9,7 @@ IterateOverASCIIStringLiteral does the interating
 func IterateOverASCIIStringLiteral(ASCII string) {
 
 	for i := 0; i < len(ASCII); i++ {
-		fmt.Printf("%X %+q %b\n", ASCII[i], ASCII[i], ASCII[i])
+		fmt.Printf("%X %c %b\n", ASCII[i], ASCII[i], ASCII[i])
 	}
 }
 
