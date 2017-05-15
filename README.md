@@ -4,18 +4,18 @@ Repository for IS-105 experiments with encoding of signs and symbols.
 ### Oppgave 1
 https://github.com/GB-Noname/is105-ica03/tree/master/ascii
 
-a. ascii.go
+a. kjøres i mainASCII.go, kode ligger i ascii.go
 
-b. ascii.go
+b. kjøres i mainASCII.go, kode ligger i ascii.go
 
 c. ascii_test.go
 
 ### Oppgave 2
 https://github.com/GB-Noname/is105-ica03/blob/master/iso/
 
-a. kjøres i main.go, kode ligger i iso.go
+a. kjøres i mainISO.go, kode ligger i iso.go
 
-b. kjøres i main.go, kode ligger i iso.go
+b. kjøres i mainISO.go, kode ligger i iso.go
 
 c. iso_test.go
 
@@ -25,17 +25,18 @@ a. forklar..
 
 https://github.com/GB-Noname/is105-ica03/tree/master/fileutils
 
-b. fileutils.go
+b. kjøres i mainFileUtils.go, kode ligger i fileutils.go
 
 https://github.com/GB-Noname/is105-ica03/tree/master/treasure
 
-c. treasure.go
+c. kjøres i mainTreasure.go, kode ligger i treasure.go
 
 ### Oppgave 4
 
 https://github.com/GB-Noname/is105-ica03/tree/master/unicode
 
-a. unicode.go, ikke gjort
+
+a. kjøres i mainUnicode.go, kode ligger i unicode.go
 
 https://github.com/GB-Noname/is105-ica03/blob/master/server.go
 
