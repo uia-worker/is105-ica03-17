@@ -20,8 +20,10 @@ b. kjøres i mainISO.go, kode ligger i iso.go
 c. iso_test.go
 
 ### Oppgave 3
-a. forklar..
 
+https://github.com/GB-Noname/is105-ica03/tree/master/Riddle
+
+a. kjøres i main_riddle.go, kode ligger i tre.go
 
 https://github.com/GB-Noname/is105-ica03/tree/master/fileutils
 
@@ -34,7 +36,6 @@ c. kjøres i mainTreasure.go, kode ligger i treasure.go
 ### Oppgave 4
 
 https://github.com/GB-Noname/is105-ica03/tree/master/unicode
-
 
 a. kjøres i mainUnicode.go, kode ligger i unicode.go
 
