@@ -4,12 +4,13 @@ import (
 	"path/filepath"
 
 	"./treasure"
+	"fmt"
 )
 
 func main() {
 
 	hexPath, _ := filepath.Abs("./treasure/treasure.txt")
-	//fmt.Printf("%s", fileutils.FileToByteslice(hexPath))
+
 	treasure.PrintTreasureUTF8(hexPath)
 
 }
