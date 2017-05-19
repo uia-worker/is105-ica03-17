@@ -45,9 +45,10 @@ b. server.go
 
 
 
-Kode-kommentarer:
+#### Kode-kommentarer:
 
 ascii.go 
+
 (under mappen ascii)
 Filen inneholder en konstant (const ASCII), og 2 funksjoner (func IterateOverASCIIStringLiteral, 
 og func GreetingASCII)
@@ -57,17 +58,20 @@ karakter i const ASCII, og blir konvertert/oversatt på 3 forskjellige måter (%
 func GreetingASCII er av typen String. funksjonen printer ut teksten "hello"
 
 ascii_test.go 
+
 (under mappen ascii)
 Filen inneholder 2 funksjoner; func TestGretingsASCII og func isASCII.
 func TestGretingsASCII er en testing-funksjon sjekker om funksjonen GreetingASCII fra ascii.go er ascii.
 func isASCII er en boolean, som basert på range ser om det er ASCII eller ikke.
 
 fileutils.go
+
 Filen har en funksjon i seg, som heter FileToBytesslice. funksjonen henter en fil og konverterer den om til en 
 byteslice, for så å returnere byteslicen. 
 Dersom filen er mindre enn byteslicen, vil funksjonen returnere en feilmelding.
 
 iso.go
+
 Filen har 2 funksjoner (func IterateOverExtendedASCIIStringLiteral og func GreetingExtendedASCII 
 Const ASCII er en String med karakterer representert med heksadesimal.
 func IterateOverASCIIStringLiteral er en iterator som printer ut hver byte i konstanten ASCII, og koverterer de på 3
@@ -75,6 +79,7 @@ forskjellige måter (%X, %+q og %b\n).
 func GreetingExtendedASCII er a typen String. funksjonen printer ut teksten hello ved bruk av det utvidede ASCII-table.
 
 iso_test.go
+
 (under mappen ascii)
 Filen inneholder 2 funksjoner; func TestGretingsASCII og func isASCII.
 func TestGretingsExtendedASCII er en testing-funksjon sjekker om funksjonen GreetingExtendedASCII fra iso.go er fra
@@ -82,9 +87,11 @@ det utvidede ascii-table.
 func isASCII er en boolean, som basert på range ser om det er fra det utvidede ASCII-table eller ikke.
 
 tre.go
+
 Filen har 1 funksjon som heter RiddleASCII. funksjonen printer ut byteslicen a.
 
 treasure.go
+
 Filen har 1 konstant (const tres), og en funksjon (func PrintTreasureUTF8).
 const tres er en slice med karakterer representer med heksadesimal.
 func PrintTreasureUTF8 bruker strengen fra filen treasure.txt som in-data. Funksjonen leser en liten fil om til en
@@ -92,6 +99,7 @@ større byteslice. Dersom filen er mindre en byteslicen, vil io.Readfull returne
 return-verdien til funksjonen fungerer kun som en stedsholder.
 
 unicode.go
+
 filen har2 konstanter (const UNICODEIS, og const UNICODE3) og 1 funksjon (func Translate) av typen String.
 const UNICODEIS er en byteslice kodet for 1253 ISLANDSK.
 const UNICODE3 er en byteslice kodet for shift_jis kan alternativt bruke eucJP.
@@ -99,7 +107,9 @@ funksjonen func Translate har to parametere (expression string og language strin
 funksjonen vil returnere en av de 2 constantene, avhengig av hvilke input funksjonen får.
 inputen er enten jp eller is.
 
+
 =======
+
 
 main_riddle.go
 
