@@ -6,9 +6,6 @@ https://github.com/GB-Noname/is105-ica03/tree/master/ascii
 
 a. kjøres i mainASCII.go, kode ligger i ascii.go
 
-a. kjøres i main.go, kode ligger i iso.go
-b. kjøres i main.go, kode ligger i iso.go
-=======
 b. kjøres i mainASCII.go, kode ligger i ascii.go
 
 c. ascii_test.go
