@@ -11,9 +11,6 @@ const ASCII = "\x00\x01\x02\x03\x04\x05\x06\x07\x08\x09\x0a\x0b\x0c\x0d\x0e\x0f"
 	`@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_` +
 	"`abcdefghijklmnopqrstuvwxyz{|}~\x7f"
 
-/*
-IterateOverASCIIStringLiteral does the interating
-*/
 func IterateOverASCIIStringLiteral() {
 
 	for i := 0; i < len(ASCII); i++ {
@@ -21,9 +18,6 @@ func IterateOverASCIIStringLiteral() {
 	}
 }
 
-/*
-GreetingASCII prints hello
-*/
 func GreetingASCII() string {
 	a := "\x22\x48\x65\x6C\x6C\x6F\x20\x3A\x2D\x29\x22"
 	for i := 0; i < len(a); i++ {
