@@ -9,15 +9,15 @@ import (
 
 func main() {
 	//KOI8-R
-	absPathRu, _ := filepath.Abs("/GitHub/org/is105-ica03/files/lang01.wl")
+	absPathRu, _ := filepath.Abs("./files/lang01.wl")
 	fmt.Printf("%s", fileutils.FileToByteslice(absPathRu))
 	//WINDOWS1252
-	absPathIce, _ := filepath.Abs("/GitHub/org/is105-ica03/files/lang02.wl")
+	absPathIce, _ := filepath.Abs("./files/lang02.wl")
 	fmt.Printf("%s", fileutils.FileToByteslice(absPathIce))
 	//WINDOWS1252
-	absPathNor, _ := filepath.Abs("/GitHub/org/is105-ica03/files/lang03.wl")
+	absPathNor, _ := filepath.Abs("./files/lang03.wl")
 	fmt.Printf("%s", fileutils.FileToByteslice(absPathNor))
 
-	hexPath, _ := filepath.Abs("/GitHub/org/is105-ica03/treasure/treasure.txt")
+	hexPath, _ := filepath.Abs("./treasure/treasure.txt")
 	fmt.Printf("%s", fileutils.FileToByteslice(hexPath))
 }

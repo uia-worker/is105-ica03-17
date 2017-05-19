@@ -5,7 +5,7 @@ import (
 )
 
 func TestGretingsExtendedASCII(t *testing.T) {
-	ascii := GreetingExtendedASCII2()
+	ascii := GreetingExtendedASCII()
 	if !(IsASCII(ascii)) {
 		t.Fail()
 	}
