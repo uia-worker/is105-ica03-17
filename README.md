@@ -1,6 +1,12 @@
 ﻿# is105-ica03
 Repository for IS-105 experiments with encoding of signs and symbols.
 
+#### Bidragsytere: 
+
+På Github står det fem contributors. Alle har bidratt, vi har jobbet i team. 
+Ampede15 har samarbeidet med CastleDev. 
+Og adrianlo har samarbeidet med MortenSchibbye. 
+
 ### Oppgave 1
 https://github.com/GB-Noname/is105-ica03/tree/master/ascii
 
