@@ -3,14 +3,7 @@ package ascii
 import "fmt"
 
 
-<<<<<<< HEAD
-func IterateOverASCIIStringLiteral() {
-=======
-/*
-IterateOverASCIIStringLiteral does the interating
-*/
 func IterateOverASCIIStringLiteral(ASCII string) {
->>>>>>> ed5029ecd5bab26b6c740d45a0580dfb1febd143
 
 	for i := 0; i < len(ASCII); i++ {
 		fmt.Printf("%X %c %b\n", ASCII[i], ASCII[i], ASCII[i])

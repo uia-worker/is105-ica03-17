@@ -11,8 +11,6 @@ func IterateOverExtendedASCIIStringLiteral(ASCII string) {
 	}
 }
 
-// Kode for Oppgave 2b
-
 func GreetingExtendedASCII() string {
 	var extASCII []byte
 	for i := 0x80; i <= 0xFF; i++ {

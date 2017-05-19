@@ -14,8 +14,6 @@ const tres = "\x48\x65\x6e\x72\x69\x6b\x20\x41\x72\x6e\x6f\x6c\x64\x20\x57\x65\x
 	"\x0a\x20\x6d\x65\x64\x20\x66\x61\x72\x20\x6f\x67\x20\x6d\x6f\x72\x20\x68\x61\x72\x20\x6c\x65\x76\x65\x74\x2e\x0a\x20\x4a\x65\x67\x20\x76\x69\x6c\x20\x64\x65\x74\x20\x65\x6c\x73\x6b\x65\x20\x74\x69\x6c\x20\x6d\x69\x6e\x20\x64\xf8\x64\x2c\x0a\x20\x65\x69\x20\x62\x79\x74\x74\x65\x20\x64\x65\x74\x20\x68\x76\x6f\x72\x20\x6a\x65\x67\x20\x65\x72\x20\x66\xf8\x64\x64\x2c\x0a\x20\x6f\x6d\x20" +
 	"\x6d\x61\x6e\x20\x65\x74\x20\x70\x61\x72\x61\x64\x69\x73\x20\x6d\x65\x67\x20\x62\xf8\x64\x0a\x20\x61\x76\x20\x70\x61\x6c\x6d\x65\x72\x20\x6f\x76\x65\x72\x73\x76\x65\x76\x65\x74\x2e\x0a"
 
-// Kode for Oppgave 3c
-// Bruk strengen fra filen treasure.txt som in-data for denne funksjonen
 func PrintTreasureUTF8(treasureString string) []byte {
 
 	file, err := os.Open(treasureString)
@@ -29,26 +27,17 @@ func PrintTreasureUTF8(treasureString string) []byte {
 	}
 	sizeOfSlice := finfo.Size()
 
-	// The file.Read() function can read a
-	// tiny file into a large byte slice,
-	// but io.ReadFull() will return an
-	// error if the file is smaller than
-	// the byte slice
 	byteSlice := make([]byte, sizeOfSlice)
 
 	_, err = io.ReadFull(file, byteSlice)
 	if err != nil {
 		log.Fatal(err)
 	}
-	//fmt.Print(byteSlice)
 	for i := 0; i < len(byteSlice); i++ {
-		//fmt.Printf("%X %+q %b\n", byteSlice[i], byteSlice[i], byteSlice[i])
-		//fmt.Printf("%+q", byteSlice[i])
+
 	}
 	fmt.Printf("%q", tres)
 	for i := 0; i < len(tres); i++ {
-		//fmt.Printf("%X %+q %b\n", byteSlice[i], byteSlice[i], byteSlice[i])
 		fmt.Printf("%q", tres[i])
 	}
-	return []byte{'\x00'} // returverdien er her kun en stedsholder
-}
+	return []byte{'\x00'}

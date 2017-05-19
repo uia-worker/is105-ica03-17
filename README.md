@@ -6,7 +6,6 @@ https://github.com/GB-Noname/is105-ica03/tree/master/ascii
 
 a. kjøres i mainASCII.go, kode ligger i ascii.go
 
-<<<<<<< HEAD
 a. kjøres i main.go, kode ligger i iso.go
 b. kjøres i main.go, kode ligger i iso.go
 =======
@@ -46,12 +45,11 @@ a. kjøres i mainUnicode.go, kode ligger i unicode.go
 https://github.com/GB-Noname/is105-ica03/blob/master/server.go
 
 b. server.go
->>>>>>> ed5029ecd5bab26b6c740d45a0580dfb1febd143
+
 
 
 Kode-kommentarer:
 
-<<<<<<< HEAD
 ascii.go 
 (under mappen ascii)
 Filen inneholder en konstant (const ASCII), og 2 funksjoner (func IterateOverASCIIStringLiteral, 
@@ -68,18 +66,16 @@ func TestGretingsASCII er en testing-funksjon sjekker om funksjonen GreetingASCI
 func isASCII er en boolean, som basert på range ser om det er ASCII eller ikke.
 
 fileutils.go
-Filen har en funksjon i seg, som er FileToBytesslice. funksjonen henter en fil og konverterer den om til en 
+Filen har en funksjon i seg, som heter FileToBytesslice. funksjonen henter en fil og konverterer den om til en 
 byteslice, for så å returnere byteslicen. 
 Dersom filen er mindre enn byteslicen, vil funksjonen returnere en feilmelding.
 
 iso.go
-Filen har 1 konstant (const ASCII), og 3 funksjoner (func IterateOverASCIIStringLiteral, func GreetingExtendedASCII,
-og func GreetingExtendedASCII2. 
+Filen har 2 funksjoner (func IterateOverExtendedASCIIStringLiteral og func GreetingExtendedASCII 
 Const ASCII er en String med karakterer representert med heksadesimal.
 func IterateOverASCIIStringLiteral er en iterator som printer ut hver byte i konstanten ASCII, og koverterer de på 3
 forskjellige måter (%X, %+q og %b\n).
 func GreetingExtendedASCII er a typen String. funksjonen printer ut teksten hello ved bruk av det utvidede ASCII-table.
-func GreetingExtendedASCII2 er av typen String. funksjonen printer ut teksten hello ved bruk av det utvidede ASCII-table.
 
 iso_test.go
 (under mappen ascii)
@@ -88,11 +84,8 @@ func TestGretingsExtendedASCII er en testing-funksjon sjekker om funksjonen Gree
 det utvidede ascii-table.
 func isASCII er en boolean, som basert på range ser om det er fra det utvidede ASCII-table eller ikke.
 
-lang.go
-Filen inneholder 3 funksjoner; func Lang, func Lang2, og func Lang3. alle er av typen String.
-func Lang har en slice med bytes a som den koverterer til unicode-format, og returnerer.
-func Lang2 har en slice med bytes b som den koverterer til unicode-format, og returnerer.
-func Lang3 har en slice med bytes c som den koverterer til unicode-format, og returnerer.
+tre.go
+Filen har 1 funksjon som heter RiddleASCII. funksjonen printer ut byteslicen a.
 
 treasure.go
 Filen har 1 konstant (const tres), og en funksjon (func PrintTreasureUTF8).
@@ -102,12 +95,15 @@ større byteslice. Dersom filen er mindre en byteslicen, vil io.Readfull returne
 return-verdien til funksjonen fungerer kun som en stedsholder.
 
 unicode.go
-filen har 1 funksjon (func Translate), og er av typen String.
-funksjonen tar inn den norske strengen som inn-data, og returnerer strengen formatert med det nye språket.
-
-
+filen har2 konstanter (const UNICODEIS, og const UNICODE3) og 1 funksjon (func Translate) av typen String.
+const UNICODEIS er en byteslice kodet for 1253 ISLANDSK.
+const UNICODE3 er en byteslice kodet for shift_jis kan alternativt bruke eucJP.
+funksjonen func Translate har to parametere (expression string og language string). 
+funksjonen vil returnere en av de 2 constantene, avhengig av hvilke input funksjonen får.
+inputen er enten jp eller is.
 
 =======
+
 main_riddle.go
 
 Importerer mappen riddle. Programmet kjøres gjennom func main som
@@ -130,6 +126,7 @@ Programmet kjøres gjennom func main som igjen henter func
 FileToByteslice. Det hentes også filer fra mappen "files" hvor det hentes
 karakter-sett til ulike språk. I denne oppgaven var det russisk, islandsk og norsk.
 hexPath henter heksadesimalene fra en tekstfil fra mappen "treasure"
+Bruker KO8-R for det russiske, og WINDOWS1252 for det norske og islandske.
 
 
 mainISO.go
@@ -172,4 +169,3 @@ func foo skriver data som skal sendes til nettleser.
 Standardinstilling er UTF-8.
 w.Write er det som blir skrivet på webserveren.
 w (parameter) = http.ResponseWriter.
->>>>>>> ed5029ecd5bab26b6c740d45a0580dfb1febd143
